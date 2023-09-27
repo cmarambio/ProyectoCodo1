@@ -21,8 +21,14 @@
 }
 
 .textGallery{
-    color: pink;
+    color: #183d0e;
     text-decoration: none;
     list-style-type: none;
     text-decoration: none;
+}
+
+.logo{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
 }
