@@ -7,6 +7,7 @@
     <title>Proyecto Codo a Codo</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/galeria.css">
 </head>
 
 <body>
@@ -14,12 +15,12 @@
     <header>
         <div class="container-nav">
             <nav class="navbar">
-                <a href="index.html" class="brand">CÓRDOBA</a>
+                <a class="textNav" href="index.html" class="brand">CÓRDOBA</a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Lugares</a></li>
-                    <li><a href="#myForm">Contacto</a></li>
-                    <li><a href="https://www.google.com/maps/@-31.4396976,-64.3846743,11z?entry=ttu"
+                    <li><a class="textNav" href="index.html">Home</a></li>
+                    <li><a class="textNav" href="">Lugares</a></li>
+                    <li><a class="textNav" href="#myForm">Contacto</a></li>
+                    <li><a class="textNav" href="https://www.google.com/maps/@-31.4396976,-64.3846743,11z?entry=ttu"
                             target="_blank">Google</a></li>
                 </ul>
             </nav>
@@ -28,25 +29,55 @@
     </header>
 
     <main></main>
-        <div class="container">
-           <h1> Bienvenidos a Córdoba: </h1>
-          <!-- Contenido principal -->
-            <section class="galeria">
-              <img src="img/imgProvisoria.JPG" alt="">
-            </section>
+    <div class="container">
+        <h1> Bienvenidos a Córdoba: </h1>
+        <!-- Contenido principal -->
 
-           <section class="presentacion">
-               <h2>Descubre la Magia de Nuestra Tierra</h2>
-              <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura,
-                 te damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
-                 sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
-                 perdurarán en tu memoria para siempre.</p>
-            </section>
+        <section class="gallery">
 
-            <section class="cards">
-             <!-- acá irán las cards -->
-            </section>
-        </div>
+            <div class="image">
+                <a class="textGallery" href="quebrachitos.html">
+                    <img src="img/capilla buffo.jpg" alt="">
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos odit suscipit temporibus adipisci
+                        amet eligendi error maiores. Ratione optio minus repellat! Vero doloribus perferendis deserunt
+                        optio. Cum rem earum fugiat? </p>
+                </a>
+            </div>
+
+
+            <div class="image">
+                <a class="textGallery" href="">
+                    <img src="img/imgProvisoria.JPG" alt="">
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ad fugiat id quisquam illum
+                        nobis
+                        sed
+                        itaque perspiciatis velit ullam vero, tempore fugit consequuntur quae illo. Mollitia in
+                        voluptatibus
+                        ut.</p>
+                </a>
+            </div>
+
+            <div class="image">
+                <a class="textGallery" href="">
+                    <img src="img/imgProvisoria.JPG" alt="">
+                    <p  > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo beatae unde natus totam distinctio reiciendis, vel, aliquam esse voluptatem temporibus asperiores animi, officiis eius. Vel unde temporibus repellat iure minima.</p>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="presentacion">
+            <h2>Descubre la Magia de Nuestra Tierra</h2>
+            <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura,
+                te damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
+                sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
+                perdurarán en tu memoria para siempre.</p>
+        </section>
+
+        <section class="cards">
+            <!-- acá irán las cards -->
+        </section>
+    </div>
     </main>
     <footer>
         <div>
@@ -59,19 +90,18 @@
         </div>
     </footer>
 
-  <form id="myForm">
+    <form id="myForm">
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="asunto">Asunto:</label>
-    <input type="text" id="asunto" name="asunto" required>
-    <input type="submit" value="Enviar">
-  
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+        <input type="submit" value="Enviar">
 
-  </form>
+    </form>
 
     <script src="estilos/script.js"></script>
 </body>

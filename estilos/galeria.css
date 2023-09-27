@@ -1,0 +1,28 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+}
+
+.textGallery{
+    color: pink;
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
+}

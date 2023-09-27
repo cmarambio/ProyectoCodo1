@@ -19,7 +19,7 @@ p {
 }
 
 
-a:hover {
+.textNav:hover {
     color: rgb(26, 3, 48);
 }
 
@@ -104,7 +104,7 @@ li {
 
 
 
-a {
+.textNav {
     color: white;
     text-decoration: none;
 }
