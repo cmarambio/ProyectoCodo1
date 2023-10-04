@@ -103,15 +103,20 @@
         </div>
    
 
-    <form id="myForm">
+    <form id="myForm" onsubmit="validateForm()">
 
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <!-- <input type="text" id="nombre" name="nombre" required> -->
+        <input type="text" id="nombre" name="nombre">
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email" >Correo electrónico:</label>
+        <!-- <input type="email" id="email" name="email" required> -->
+        <input type="email" id="email" name="email" >
+       
         <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" required>
+        <!-- <input type="text" id="asunto" name="asunto" required> -->
+        <input type="text" id="asunto" name="asunto" >
+        
         <input type="submit" value="Enviar">
 
     </form>
