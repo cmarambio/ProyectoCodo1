@@ -20,7 +20,8 @@ async function climaCordoba(){
         var infoApi = document.querySelector('.infoApi');
         var imagen = document.querySelector('.imgApiClima');
         imagen.src = info.condition.icon;
-        infoApi.appendChild(imagen)
+        console.log(imagen.src);
+        // infoApi.appendChild(imagen)
         infoApi.innerHTML = `
         
         La Temperatura en Córdoba es :
