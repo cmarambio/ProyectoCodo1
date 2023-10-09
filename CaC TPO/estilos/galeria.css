@@ -1,0 +1,36 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000; /* Borde derecho para marcar la línea de columna */
+}
+
+.image img {
+  
+  height: auto; /* Altura automática para mantener la proporción */
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.textGallery {
+  color: #183d0e;
+  text-decoration: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.logo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
