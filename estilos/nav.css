@@ -13,11 +13,80 @@ ul li ul {
 
 ul li:hover>ul {
     display: block;
-
 }
 
 ul li a:hover {
-
-
     color: rgb(250, 247, 253);
+}
+
+.container-nav {
+    display: flex;
+    padding: 1vw;
+    height: 5vw;
+    background-color: #183d0e
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li>a {
+    padding: 8vw 2.4vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+.textNav {
+    color: #f6be00;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.button-menu-toggle {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.95);
+        width: 100%;
+        height: 100%;
+        top: 7vw;
+        left: 0;
+        flex-direction: column;
+        padding-top: 20vw;
+        align-items: center;
+        gap: 7vw;
+        font-size: 4vw;
+    }
 }
