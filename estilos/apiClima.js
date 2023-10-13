@@ -3,7 +3,6 @@
 
 
 const url = `https://api.weatherapi.com/v1/current.json?key=14edc5fc17294bb7a8121911230709&q=Cordoba`
-
 async function climaCordoba(){
     try{
         const response = await fetch(url)
@@ -21,8 +20,7 @@ async function climaCordoba(){
         var imagen = document.querySelector('.imgApiClima');
         imagen.src = info.condition.icon;
         console.log(imagen.src);
-        // infoApi.appendChild(imagen)
-        infoApi.innerHTML = `
+        infoApi.innerText = `
         
         La Temperatura en Córdoba es :
            ${info.feelslike_c}° , <br>
