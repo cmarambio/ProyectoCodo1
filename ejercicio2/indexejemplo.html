@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Codo a Codo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos/nav.css">
+    <link rel="shortcut icon" href="img/icono2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/apiClima.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- sacar -->
+</head>
+
+<body>
+  
+    <header>
+        <section class="container-nav">
+            <nav class="navbar">
+                 <a class="textNav" href="index.html" class="brand">
+                     <img class="logo" src="img/logo2.JPG" alt="">
+                </a>
+                 <ul class="nav-links">
+                        <li><a class="textNav" href="index.html">Home</a></li>
+                        <li><a class="textNav" href="">Lugares ▼</a>
+                             <ul>
+                                <li><a href="quebrachitos.html">Quebrachitos</a></li>
+                                <li><a href="#">Uritorco</a></li>
+                                <li><a href="#">Los Gigantes</a></li>
+                             </ul>
+                    </li>
+
+                <li><a class="textNav" href="#myForm">Contacto</a></li>
+                <li><a class="textNav" href="https://www.google.com/maps/@-31.4396976,-64.3846743,11z?entry=ttu"
+                 target="_blank">Google</a></li>
+               
+            </ul>
+             </nav>
+        </section>
+
+    </header>
+
+     <section class="about" id="about">
+
+        <h1 class="heading">Circuito Sendero Los Quebrachitos</h1>
+        <h3></h3>
+               <div class="image">
+                <img src="img/cruzando rio.jpeg" alt="">
+                <img src="img/camina.jpg" alt="" >
+                <img src="img/1200px-La_Cascada_de_Los_Hornillos.jpg" alt="">
+                <img src="img/capilla buffo.jpg" alt="">
+                              
+          
+        
+            </div>
+
+
+    </section>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Bosque nativo, cascadas y una Capilla Unica</h1>
+            <p>A sólo 8 km de la zona céntrica de Unquillo (y a 40k de cordoba ciudad), se encuentra un destino ideal para principiantes del senderismo. Dentro de la Reserva Hídrica, Natural y Recreativa Los Quebrachitos, con casi 5000 hectáreas, es posible recorrer senderos boscosos entre arroyos y vertientes. A través de sus rincones, se pueden hallar ejemplares con más de un siglo de algarrobos, quebrachos blancos, molles, cocos, acacias y moras, entre otros ejemplos de flora autóctona. La reserva está atravesada por los afluentes del río Unquillo: los arroyos Cabana y las Ensenadas. ¿Un imperdible ? La Cascada de Los Chorrillos, ideal para refrescarse en los días de verano.
+                Por ultimo, y no menos importante, se puede visitar la Capilla Buffo, constuida como homenaje del italiano</p>
+         </div>
+    </section>
+
+
+
+    <section class="product" id="product">
+
+        <div class="box-container">
+
+            <div class="box">
+               
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32472.156651978406!2d-64.37505115630722!3d-31.187051083838963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d7ddfceeaec41%3A0x491a5eb9f8273032!2sCasa%20Museo%20y%20Capilla%20Buffo!5e0!3m2!1ses!2sar!4v1696245828067!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Como llegar:</h3>
+                <p> Por auto a traves de la ruta e53. de allí a la izquierda por la avenida Amadeo Sabattini hasta llegar a la avenida San Martín, de Unquillo
+                    Por la Ruta intermunicipal E-57, salida norte por Argüello, Villa Allende, Mendiolaza hasta Unquillo.
+                    colectivos interurbanos llegan hasta la ciudad de Unquillo.</p>
+            </div>
+
+            <div class="box">
+                <img class= fichas src="img/camina2.jpg" alt="">
+                <h3>Ficha tecnica</h3>
+                <p>Dificultad física: moderada
+                    Recorrido:  9 km.
+                    Duración: 4 horas y media.
+                    Punto de partida y fin de recorrido: Casa Museo Buffo 31.192426, -64.364361
+                    Perfil de elevación:
+                    Altura máxima: 1063 msnm.
+                    Altura mínima: 817 msnm.
+                    Desnivel positivo acumulado: 368 m.</p>
+            </div>
+
+            <div class="box">
+                <img class="imgApiClima" src="" alt="">
+                  <div class="infoApi">
+
+                </div>
+                <h3>El Pronostico</h3>
+                <p>Te contamos como va a estar el clima para que te prepares!!!</p>
+              
+            </div>
+
+        </div>
+
+    </section>
+
+     <section class="contact" id="contact">
+
+        <h1 class="heading">Contacta con Nosotroso</h1>
+        <h3></h3>
+        <div class="row">
+            <div class="form-container">
+
+                <form id="myForm" onsubmit="validateForm()">
+
+                    <label for="nombre">Nombre:</label>
+                    <!-- <input type="text" id="nombre" name="nombre" required> -->
+                    <input type="text" id="nombre" name="nombre">
+            
+                    <label for="email" >Correo electrónico:</label>
+                    <!-- <input type="email" id="email" name="email" required> -->
+                    <input type="email" id="email" name="email" >
+                   
+                    <label for="asunto">Asunto:</label>
+                    <!-- <input type="text" id="asunto" name="asunto" required> -->
+                    <input type="text" id="asunto" name="asunto" >
+                    
+                    <input type="submit" value="Enviar">
+            
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-reddit"></a>
+        </div>
+
+    </section>
+
+    <script src="estilos/apiClima.js"></script>
+    <script src="estilos/script.js"></script>
+
+</body>
+
+
+</html>

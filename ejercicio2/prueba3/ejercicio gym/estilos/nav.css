@@ -1,0 +1,23 @@
+ul li a {
+    background-color: #183d0e;
+    color: #f6be00;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    display: none;
+}
+
+ul li:hover>ul {
+    display: block;
+
+}
+
+ul li a:hover {
+
+
+    color: rgb(250, 247, 253);
+}
