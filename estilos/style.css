@@ -1,6 +1,6 @@
 body {
     background-image: url(img/mapa.jpg);
-    color: rgb(5, 5, 97);
+    color: #183d0e;
 }
 
 
@@ -19,8 +19,8 @@ p {
 }
 
 
-a:hover {
-    color: rgb(26, 3, 48);
+.textNav:hover {
+    color: rgb(250, 247, 253);
 }
 
 
@@ -69,7 +69,7 @@ a:hover {
     display: flex;
     padding: 10px;
     height: 50px;
-    background-color: rgb(54, 125, 153);
+    background-color: #183d0e
 }
 
 
@@ -104,8 +104,8 @@ li {
 
 
 
-a {
-    color: white;
+.textNav {
+    color: #f6be00;
     text-decoration: none;
 }
 
