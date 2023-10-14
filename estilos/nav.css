@@ -94,5 +94,10 @@ li {
         align-items: center;
         gap: 7vw;
         font-size: 4vw;
+
+    }
+    ul li:hover>ul {
+        display: block;
+        position: relative;
     }
 }
