@@ -1,0 +1,93 @@
+
+.contenedor-carrusel{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.contenedor-carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.contenedor-carrusel a{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.tCarrusel{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 17vw;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+} 
+
+.contenedor-carrusel img{
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    
+}
+
+.contenedor-carrusel a:hover {
+    transition: top 0.8s;
+    transform: scale(1.1);
+    transition: transform 1s;
+
+}
+
+.contenedor-carrusel a:hover .tCarrusel{
+    top: 1vw;
+    transition: tralator 1s;
+}
+
+@keyframes slide {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+    105%{margin-left: -400%;}
+    125%{margin-left: -400%;}
+
+    130%{margin-left: -500%;}
+    150%{margin-left: -500%;}
+
+    155%{margin-left: -600%;}
+    175%{margin-left: -600%;}
+}
+
+@media(max-width: 768px){
+
+    .contenedor-carrusel{
+        width: 100%;
+        padding: 2px;
+    }
+
+    .contenedor-carrusel img {
+    max-height: 300px;
+    }
+    .tCarrusel{
+        top: 50%;
+        padding: 0;
+    }
+
+    .tCarrusel h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+  }
