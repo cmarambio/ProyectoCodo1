@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="estilos/galeria.css">
     <link rel="stylesheet" href="estilos/nav.css">
     <link rel="stylesheet" href="estilos/apiClima.css">
-    <link rel="stylesheet" href="estilos/carrusel">
+    <link rel="stylesheet" href="estilos/carrusel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +28,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a class="textNav" href="index.html">Home</a></li>
-                    <li><a class="textNav" href="">Lugares ▼</a>
+                    <li><a class="textNav" href="#">Lugares ▼</a>
                         <ul>
                             <li><a href="templates/quebrachitos.html">Quebrachitos</a></li>
                             <li><a href="templates/circuitosEjemplo.html">Urutirco</a></li>
@@ -48,63 +46,63 @@
 
     <main>
 
+
+        <h1> Bienvenidos a Sendereos Córdoba: </h1>
+        <!-- api clima -->
+        <img class="imgApiClima" src="" alt="">
+        <div class="infoApi"></div>
+
+        <!-- Contenido principal -->
+        <!-- Carrusel de imágenes -->
+        <section class="contenedor-carrusel">
+            <ul>
+                <a href="templates/quebrachitos.html">
+                    <img src="img/camina.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 1</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="img/camina2.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 2</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="img/capilla buffo.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 3</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="img/panoramica.png" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 4</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="img/CarruselGigVistaN.png" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 5</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="img/cruzando rio.jpeg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 6</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <img src="img/GigCartel.jpeg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Localidad 7</h2>
+                    </div>
+                </a>
+            </ul>
+        </section>
+
+        <!-- Galeria de imágenes tipo card con texto y presentaciones lindas -->
         <div class="container">
-            <h1> Bienvenidos a Sendereos Córdoba: </h1>
-            <!-- api clima -->
-            <img class="imgApiClima" src="" alt="">
-            <div class="infoApi">
-
-            </div>
-
-            <!-- Contenido principal -->
-            <!-- Carrusel de imágenes -->
-            <div class="contenedor-carrusel">
-                <ul>
-                    <a href="templates/quebrachitos.html">
-                        <img src="img/camina.jpg" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad 1</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <img src="img/camina2.jpg" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad  2</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <img src="img/capilla buffo.jpg" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad  3</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <img src="img/panoramica.png" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad  4</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <img src="img/CarruselGigVistaN.png" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad  5</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <img src="img/cruzando rio.jpeg" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad  6</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <img src="img/GigCartel.jpeg" alt="">
-                        <div class="tCarrusel">
-                            <h2>Localidad  7</h2>
-                        </div>
-                    </a>
-                </ul>
-            </div>
-            <!-- Galeria de imágenes tipo card con texto y presentaciones lindas -->
             <section class="gallery">
 
                 <div class="image">
@@ -114,11 +112,11 @@
                             <img src="img/capilla buffo.jpg" alt="Capilla Buffo">
 
                             <div class="text-overlay">
-    
+
                                 <h4>Nombre de la localidad</h4>
-    
+
                             </div>
-    
+
 
                         </div>
 
@@ -154,19 +152,20 @@
                 </div>
 
             </section>
-
-            <section class="presentacion">
-                <h2>Descubre la Magia de Nuestra Tierra</h2>
-                <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura,
-                    te damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
-                    sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
-                    perdurarán en tu memoria para siempre.</p>
-            </section>
-
-            <section class="cards">
-                <!-- acá irán las cards -->
-            </section>
         </div>
+
+        <section class="presentacion">
+            <h2>Descubre la Magia de Nuestra Tierra</h2>
+            <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura,
+                te damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
+                sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
+                perdurarán en tu memoria para siempre.</p>
+        </section>
+
+        <section class="cards">
+            <!-- acá irán las cards -->
+        </section>
+        
     </main>
     <footer>
         <div>
@@ -182,15 +181,12 @@
         <form id="myForm" onsubmit="validateForm()">
 
             <label for="nombre">Nombre:</label>
-            <!-- <input type="text" id="nombre" name="nombre" required> -->
             <input type="text" id="nombre" name="nombre">
 
             <label for="email">Correo electrónico:</label>
-            <!-- <input type="email" id="email" name="email" required> -->
             <input type="email" id="email" name="email">
 
             <label for="asunto">Asunto:</label>
-            <!-- <input type="text" id="asunto" name="asunto" required> -->
             <input type="text" id="asunto" name="asunto">
 
             <input type="submit" value="Enviar">
