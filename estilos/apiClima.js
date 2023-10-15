@@ -20,13 +20,12 @@ async function climaCordoba(){
         var imagen = document.querySelector('.imgApiClima');
         imagen.src = info.condition.icon;
         console.log(imagen.src);
-        infoApi.innerText = `
-        
+        infoApi.innerHTML = `<p>
         La Temperatura en Córdoba es :
-           ${info.feelslike_c}° , <br>
-           Vientos de  ${info.gust_kph} Kilómetros por Hora,<br>
-           Humedad del  ${info.humidity}%<br>
-           Actualización al ${info.last_updated} hora local<br>
+           ${info.feelslike_c}° , 
+           Vientos de  ${info.gust_kph} Kilómetros por Hora,
+           Humedad del  ${info.humidity}%
+           Actualización al ${info.last_updated} hora local</p>
      `;
     
 
