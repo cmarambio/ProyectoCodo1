@@ -72,6 +72,17 @@
 
 }
 
+@media (max-width: 600px){
+  .card  p{
+    font-size: 15px;
+    padding: .5w;
+    border-top: 1px solid #b3a2a2;
+    color: black;
+  }
+
+}
+
 .espacios{
   height: 30vh;
+
 }
