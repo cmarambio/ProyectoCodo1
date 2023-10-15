@@ -1,62 +1,52 @@
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+
+
+.contenedorCard{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    display: block;
-   
+.card{
+  width: 330px;
+  min-height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius:10px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.24);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #025d0f 100%);
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: .1px;
+  text-decoration: none;
 }
 
-.image img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s;
-
+.cardLocalidad {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 15%;
+  border: 7px solid #fff;
+  border: 1px solid #b3a2a2;
+}
+.uritorco{
+  background-image: url('../img/camina.jpg');
 }
 
-.textGallery{
-    color: #183d0e;
-    text-decoration: none;
+.gigantes{
+  background-image: url('../img/CarruselGigBase.jpeg');
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-  }
+.quebrachitos{
+  background-image: url('../img/capilla\ buffo.jpg');
+}
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-
-.text-overlay {
-    position: absolute;
-    top: 30%;
-    left: 100%; /* Inicialmente, el texto estará fuera del contenedor */
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
-    color: #fff; /* Color del texto */
-    padding: 1vw; /* Espacio interior del texto */
-    transition: left 0.8s; /* Transición de movimiento del texto */
-  }
-
-  .image-container:hover .text-overlay {
-    left: 0; /* Mover el texto al centro del contenedor al pasar el puntero */
-  }
-
-  @media(max-width: 768px){
-
-
-    .image-container {
-        position: static;
-    }
-    .text-overlay{
-        display: none;
-      }
-    p{
-        font-size: 3vw;
-    }
-  }
+.card  p{
+  font-size: 1vw;
+  padding: .5w;
+  border-top: 1px solid #b3a2a2;
+  color: black;
+}
