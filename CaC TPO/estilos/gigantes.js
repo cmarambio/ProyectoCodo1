@@ -18,12 +18,12 @@ async function climaGigantes() {
     console.log(imagen.src);
     // infoApi.appendChild(imagen)
     infoApi.innerHTML = `
-        
-        La Temperatura en Los Gigantes es :
-           ${info.feelslike_c}° , <br>
-           Vientos de  ${info.gust_kph} Kilómetros por Hora,<br>
-           Humedad del  ${info.humidity}%<br>
-           Actualización al ${info.last_updated} hora local<br>
+    <p>    
+        Temperatura: <b> ${info.feelslike_c}° </b> <br>
+           Vientos:  ${info.gust_kph} Km/H <br>
+           Humedad:  <b> ${info.humidity}% </b> <br>
+           ${info.last_updated} hs<br>
+    </p>
      `;
   } catch (error) {
     console.log("Ocurrió un error", error);
@@ -45,3 +45,21 @@ function mostrarSiguienteImagen() {
 
 // Iniciar la presentación de diapositivas
 setInterval(mostrarSiguienteImagen, 3000); // Cambiar de imagen cada 3 segundos
+
+// Uso de Vue
+
+const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      listrefugios1: [
+        { nombre: "Del Pilar", telefono: 3514215283 },
+        { nombre: "Villa Amelita", telefono: 3541628510 },
+        { nombre: "Casas Nuevas", telefono: 3541608466 },
+        { nombre: "Casas Nuevas", telefono: 3515578068 },
+      ],
+    };
+  },
+}).mount("#refugios1");
+

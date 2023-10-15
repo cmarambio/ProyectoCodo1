@@ -1,20 +1,62 @@
+.containerGig {
+  max-width: 88vw;
+  margin-left: 3vw;
+  padding: 2vw;
+}
+
+.card-containerGig {
+  /*para las cards*/
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-left: 0;
+  gap: 0.7vw;
+}
+.cardGig {
+  width: calc(33.33% - 10px);
+  padding: 1vw;
+  background-color: #d0d2d4;
+  text-align: center;
+  border-radius: 0% 0% 10% 10%;
+  margin-left: 0;
+
+  border: 0.4vw solid #ccc;
+  border-bottom: 0.8vw solid #999; /* Borde más oscuro para el efecto de relieve */
+  border-right: 0.8vw solid #999; /* Borde más oscuro para el efecto de relieve */
+  box-shadow: vw 0vw 1.4vw rgba(0, 0, 0, 0.3); /* Sombra para el efecto de relieve */
+}
+
+.principal {
+  /*para el párrafo principal*/
+
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.1);
+  background-color: #d0d2d4;
+  border-radius: 5% 0% 0% 5%;
+  margin: 1vw 4vw 0vw 4vw;
+
+  border: 0.4vw solid #ccc;
+  border-top: 0.8vw solid #999; /* Borde superior más oscuro para el efecto de relieve */
+  border-left: 0.8vw solid #999; /* Borde izquierdo más oscuro para el efecto de relieve */
+  box-shadow: 0 0vw 1.4vw rgba(0, 0, 0, 0.3); /* Sombra para el efecto de relieve */
+}
+
 .parrafo {
   margin-bottom: 0.5vh;
-  margin-top: 0.5vh;
-  padding-bottom: 0%;
-  padding-top: 0%;
+  margin-top: 0.1vh;
+  margin-left: 8vw;
+  padding: 0;
 }
 
 .parrafo::first-letter {
-  font-size: 1.6vw;
+  font-size: 2vw;
   color: black;
   font-weight: bold;
 }
 
 .palabra {
-  margin-top: 1vh;
+  font-family: "Poppins";
   text-align: center;
-  font-size: 3em;
+  font-size: 5vw;
   font-weight: bold;
   position: relative;
   color: #183d0e;
@@ -23,7 +65,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: ondas 6s infinite;
+  animation: ondas 3s infinite;
 }
 
 @keyframes ondas {
@@ -35,187 +77,187 @@
   }
 }
 
-.principal {
-  margin-top: 0.5vw;
-  padding: 1vw;
-}
-
 .imageGigantes {
-  /*imagen principal*/
   position: relative;
   overflow: hidden;
-  width: 60vw;
-  height: 40vh;
-  margin-top: 2vw;
-  margin-left: 18vw;
-  padding: 0;
-  display: flex;
+  width: 28vw;
+  height: auto;
+  margin-left: 30vw;
+  display: block;
   border-radius: 5%;
   border-width: 0.25vw;
   border-color: black;
   border-style: solid;
   transition: transform 0.3s;
+  object-fit: cover;
+  margin-top: 1.2vw;
 }
+
 .imageGigantes:hover {
   transform: scale(1.1);
 }
 
-.gallery {
-  margin-top: 1vw;
-  gap: 1vw;
-}
 
-.image-container {
+.imagen-container {
+  max-width: 100%;
+  width: 25vw;
+  height: 35vh;
+  text-align: center;
   position: relative;
-  width: 25vw;
-  height: 15vw;
-  overflow: hidden;
-  margin-left: 2vw;
-  padding: 0.4vw;
+  
+  
 }
 
-.image-container img {
+.imagen-container img {
   width: 25vw;
-  height: 15vw;
-  transition: opacity 0.5s ease-in-out; /* Configura la transición de opacidad */
-  border-radius: 5%;
+  height: 35vh;
+  
+  display: block;
+  transition: opacity 0.5s;
+  object-fit: cover;
+  border-radius: 10%;
   border-width: 0.25vw;
   border-color: black;
   border-style: solid;
 }
 
-.image1 {
-  /*imagen doble*/
+.imagen-container img:first-child {
+  opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1; /* Muestra la imagen inicial */
+  width: 100%;
+
 }
 
-.image2 {
+.imagen-container img:not(:first-child) {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0; /* Oculta la imagen secundaria inicialmente */
+  width: 100%;
 }
 
-/* Cambia la opacidad al pasar el cursor */
-.image-container:hover .image1 {
-  opacity: 0; /* Oculta la imagen inicial al pasar el cursor */
+.imagen-container:hover img {
+  opacity: 0;
+}
+.imagen-container:hover img:last-child {
+  opacity: 1;
 }
 
-.image-container:hover .image2 {
-  opacity: 1; /* Muestra la imagen secundaria al pasar el cursor */
-}
 
 .custom-link {
   text-decoration: none; /* Elimina la línea subrayada */
   color: #f6be00;
-  /* font-weight: bold; texto del enlace negrita */
-  /* font-size: 16px; Cambiar el tamaño de fuente del enlace */
   padding: 0.1%; /* espacio de relleno alrededor del enlace */
   background-color: #183d0e; /* color de fondo del enlace */
   /* border: 1vw solid #0a0b0c; Agrega un borde al enlace */
-  border-radius: 5%; /* borde con esquinas redondeadas */
+  border-radius: 15%; /* borde con esquinas redondeadas */
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* transición suave al color de fondo y al color del texto */
 }
 
 /* Cambia el estilo cuando el mouse está sobre el enlace */
 .custom-link:hover {
-  background-color: rgba(
-    86,
-    214,
-    231,
-    0.7
-  ); /* Cambia el color de fondo cuando el mouse está sobre el enlace */
-  color: black; /* Cambiar el color del texto cuando el mouse está sobre el enlace */
+  background-color: white; /* Cambia el color de fondo cuando el mouse está sobre el enlace */
+  color: black; /* Cambia el color del texto cuando el mouse está sobre el enlace */
+  border: 0.1vw solid #0a0b0c; /*Agrega un borde al enlace */
+  border-radius: 20%;
   font-variant: small-caps;
   font-weight: bold;
 }
 
-.datos {
-  font-family: "arial";
-  font-size: 1.2vw;
-  margin: 1%;
-}
-
-.container {
-  margin-top: 0.2 vw;
-  padding: 1vw;
-  border: 0.3vw solid #999696;
-}
-
-.container-flex {
-  display: flex;
-  flex-direction: row; /* Esto establece la dirección de las columnas */
-  align-items: flex-start;
-  padding: 0.5vw;
-}
-
-.columna {
-  padding: 3vw;
-  border: 0.2vw solid #ccc;
-  width: 35vw;
-  height: 45vw;
-}
-
 h3 {
-  margin-top: 0.5vh;
-  margin-left: 8vw;
-  margin-right: 10vw;
-  font-size: 1.8vw;
+  margin-top: 2vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  font-size: 2vw;
   text-decoration: underline;
   text-align: center;
+  font-family: "Poppins";
+  background-color: white;
+  color: black;
+  border-radius: 35%;
 }
 
 h4 {
   margin-left: 4vw;
-  margin-right: 6vw;
-  font-size: 1.4vw;
+  margin-right: 4vw;
+  font-size: 2vw;
   background-color: rgba(231, 209, 86, 0.7);
   text-align: center;
-  padding: 0.1vw;
+  padding: 0vw;
+  font-family: "Poppins";
+  border-radius: 35%;
+}
+
+h5 {
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #960f1a;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 2vw;
+  font-weight: bolder;
 }
 
 .refugios {
-  font-size: 1.3vw;
-  margin-bottom: 1vw;
-  padding: 1vw;
+  font-size: 1.6vw;
+  margin: 0;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  font-family: "Poppins";
+  text-align: left;
+}
+
+.refugios ul {
+  padding-left: 0.4vw;
+  text-align: left;
 }
 
 .collage {
-  width: 20vw; /* Ancho total del collage */
-  height: 40vh; /* Altura total del collage */
+  width: 100%; /* Ancho total del collage */
+  height: auto; /* Altura total del collage */
   overflow: hidden;
-  margin-left: 5vw;
+  margin-left: 0;
   border-width: 0.25vw;
   border-color: black;
   border-style: solid;
-  border-radius: 5%;
+  border-radius: 20%;
   padding: 0;
 }
-/* Estilo para las imágenes individuales */
+/* Estilo para las imágenes collage individuales */
 .imagen {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: 100%;
+  width: 100%;
   display: none; /* Ocultar todas las imágenes inicialmente */
   object-fit: cover;
 }
 
-.burrito {
-  text-align: center; /* Alinea el contenido al centro */
-  display: flex;
-}
 
-.imgburrito {
-  width: 6vw;
+.burrito-container {
+  width: 5vw;
   height: 5vw;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5vw;
+  margin-left: 10vw;
+  padding: 0.5vw;
+  
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(0deg);
+  transition: transform 2s ease-in-out;
+  border-radius: 75%;
+  
+  border-color: #960f1a;
+
+}
+.burrito-container:hover .image {
+  transform: rotate(360deg);
 }
 
-h5 {
-  font-size: 1.4vw;
-  text-align: left;
-  padding: 0.1;
-  color: #183d0e;
-  font-style: italic;
-}
