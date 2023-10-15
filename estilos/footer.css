@@ -1,5 +1,6 @@
 /* Estilos para el formulario */
 footer{
+  position: absolute;
   background-color: #183d0e ;
   color: #f6be00;
 }

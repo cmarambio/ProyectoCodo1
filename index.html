@@ -47,7 +47,7 @@
     <main>
 <!-- bienvenida y api -->
 <section class="sectionUno">
-    <h1> Bienvenidos a Sendereos Córdoba: </h1>
+    <h1> Bienvenidos a Senderos Córdoba: </h1>
 
  <!-- api clima -->
 
@@ -112,7 +112,7 @@
         <!-- Galeria de imágenes tipo card con texto y presentaciones lindas -->
         
         <section class="contenedorCard">
-            <a href="#" class="card">
+            <a href="templates/circuitosEjemplo.html" class="card">
                 <div class="cardLocalidad uritorco"></div>
                 <h2 class="card__name">Cerro Uritorco</h2>
                 <p>El Cerro Uritorco, en Córdoba, Argentina, es un destino de trekking único. Con su
@@ -121,7 +121,7 @@
                     ideal para la observación de aves. Un destino imperdible para los amantes de la naturaleza y la
                     aventura.</p>
             </a>
-            <a href="#" class="card">
+            <a href="templates/circuitosEjemplo.html" class="card">
                 <div class="cardLocalidad gigantes"></div>
                 <h2 class="card__name">Los Gigantes</h2>
                 <p>Macizo de Los Gigantes, en el valle de Punilla. De una belleza y magnitud
@@ -130,24 +130,30 @@
                     verdes, en diversos circuitos a pie por senderos con distinto grado de dificultad.</p>
             </a>
     
-            <a href="#" class="card">
+            <a href="templates/quebrachitos.html" class="card">
                 <div class="cardLocalidad quebrachitos"></div>
                 <h2 class="card__name">Quebrachitos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nemo. Nostrum
                     sint eveniet explicabo, vero voluptas repellendus nulla iste quo iusto accusantium veritatis nesciunt
                     quasi, dignissimos rerum possimus recusandae culpa?</p>
             </a>
+
+            <a href="templates/quebrachitos.html" class="card">
+                <div class="cardLocalidad">
+                    <img class="imgApiClima" src="" alt="">
+                </div>
+                
+                <h2 class="card__name">El tiempo en Córdoba capital</h2>
+                <div class="infoApi"></div>
+                <img class="imgApiClima" src="" alt="">
+            </a>
     
-        </section>
-
-        <div class="infoApi"></div>
-        <img class="imgApiClima" src="" alt="">
-
-        <section class="cards">
-            <!-- acá irán las cards -->
         </section>
         
     </main>
+    <div class="espacios">
+
+    </div>
     <footer>
         <div>
             <h2>Contacta Con Nosotros</h2>
@@ -173,13 +179,6 @@
             <input type="submit" value="Enviar">
 
         </form>
-
-        <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAlhJREFUSEvF1kuoTlEUwPHfjZC8J8gASREZGUikDDD0SAYoMiIikZiYIY9CGUopklBCTEykEEoJmXiWRxJCIqKlc3W+7ezvnPsZWHUH93xrr/9ae712l/8kXf+Jq6fgXpiGMRhZOP0CT3EdP5oG0hQ8HluxAEMyxt/hNHbiUZ0DdeD+2IU1iGibyHfsxXZ8yx1oBx6NC5jUhFahcxPzEan4S3LgibiKYR1Cu48FdHpRAy2mqsAjikKJiOvkNa7gMb6gNxZhQung/QL+oWysCnwCS+qICL3VeJ/orsPB5NshrG0HDk8fNIBGFFMy7bMe+xMbUWTRgi+7v6cRH8XyBuC4zjOJXhiOv4WIqFPZjS1V4D54g0ENwHEzD0t6p4rctjsavT2uCjwblxtAQyWc+1johsNfG57743D5qlfgSEMDA/Gp0B1QcqLuePT12VAqgzcj8tBEOgVvwIEUvAl7MtQnGNvEI5zE4oxuMPal4KjmqOoq6Qn4LiZn7CzF8RQc6+5a5kBLRbaJPBbJZ/TN6EzF7RQc4y5WWxRLKjGdfuemkB2lzRNVva34HrnfmIGGjZj9P1Nw/N+kH0Ovk+I6hmXdTqWTK64i1lmddAKOvN/LgeP7RcyrIfcUHDfZUum5tRhLYGgbeE/ArxD7vWWL5R4Cs3AJ/TLwpuAYqzGKb6V22j19ZuA8BlfAm4Bj4czBnSrn6x57o4pJFM+XstSBz2El3ubSVQfubrmZWIW5GJ5pp+dFeg7jRl1bNAGnNmJmPyu9PmJahTOVr8l/ibjO+Y5+7yTijkDpoV8YsHQf2Ot1BQAAAABJRU5ErkJggg==" />
-        <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAmpJREFUSEvl1knozVEUwPHPXxaKMiwMCSGhEFmYx9iQqVhYkaEsLNggw8aQMmXBgkgpKzamjYV5LBkyZCxKyJDEwoZ09Pvr9et3f+89T/2Vu3mv+zvnfO859wy3SQutphbi+ufB3dAPrapE6Due4U21SJZ53BXbMR0dqxnKff+E01iVOkQKPAtH0LZOYF78K+bjVP5DEbgLHqN9g9Bm9Y/oj/j9vYrAB7GoAehztEavChsHsLQMHApxP+3+EHwHwzLdexiU/f+CDvjRbDfvcU+8rAINj7bhCUJ+JOYgkrESfBtDK2x1xvsUeDhuloBXYyeibCpX5EPsL8ZTfMPgnEx4/yAFnoDzCfBy7MUAzMPYTO4SjmYJuQsrE/oRmRsp8FScKVC8koEiO/dgSk4mdOJgcU13s8PlzYzGtXrBC3AY67A54dFabMUmrC+QGYOr9YIjrOF1dKNpCfAJROOZm4U+LzYecS2/Vj6rJ+FsgeHJOJd1oGihRes4ZpeAJ+JCChwfA5Bfy7APa7JwFoEj46PMtiDCnl/jcLlecGRjZGUf7MaMnNXwdgU+4BG6F4BH4XoKHKe6mAhlczn1zsI5IpMLY8fwAvvzrbHCVvSIWynwkKwcEmwRzh2VrS8TrGwgKd1oKPdT4JhMb1Oa2X5MriibqNlomVGfMxGPhbIV4X+dAsf+q8QdVbFb+vkzOpUNidDegI2NUAp0Y9QuqdwvmscxGh9mb6y/wQ9v+9byEAhYD0SJNM/WRg4Qj4pDeQNlj7022TRaWMPrMm83Bv5JxLQqLM9a3tWR6QPrdDmu6l2ZTi3gOpm1if9/4J9oyHEfOQrU/wAAAABJRU5ErkJggg==" />
-        <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwBJREFUSEvV1lvoZmMUBvDf5FROwxhyHpIxIuRYzkJOzY2ZJM1MMU43XKAoJblAKAnleCFEg0hClJyTEilKcj6fz8IIPVpbX7u9/3t/c/PPuvm+vfe71vM+633WWu8cs2RzZgnX/w54PrbD2vgIX+DvabI3DeNdcBqWY6sWyE94AQ/jdvwxtIkxwNvgMpzKf0fzK94rlru3QD7FGXh0JvAh4BNwFzbBl7gBj+DViaAbYn8cjAuxfm3oHNzYBz4T8LF4rByvwiX4fSCF21eqj6p1Z+PmLp8+4AV4HRvjPFw7dGat7xfgavyFw/B8278POEzD+HJcXE7r4kA8M1LB9+DkIrDnGOCk6Ul8jJ1KoTm3F5EAUXXOfciiizerApbigUmHLsY34Syci+trcf5fV//D+PAh1Pp+XKk7glw8BPwBIpLU6ue1uNlM47s1PhsJnsxtjnn4pfFpM14Pv+EtLJoIfD6uqeec3SkjQbPsJRyAvSfLsA2cNvhhdaHUZWPb1mZy1mfi1imA78eSUvezfYyT4qT6FezbCp7mcCW+LXUnK2OsUfdBJdB/fdqMN8DP+B6bdkRtdv9dMc9zLEpfC3d0lFrEeCh2KFKdwHn5LnYs4Gxg0tJQUla7TZx3GGUDqfP3SwtNq1wHX9fazfBnX6rzvlHw6dX+2sTnVpmFZZfdh5PqQ9N278SKycVddZwm8VqlZWes7gFI0KNL4VvWmkytI/ByPed3v3r39BBwvj9X0+YYPDGgoNTnHrXmbXxS/y/CFXgKR7Zj9PXqnEtaXgSWIT+tZR7fUu029fvGGOAm1Zkoh5RDyizXm6GxmKtQhsql5bcMd3ftuotxM9Iewjs4HrtWi4xaI75vWsE2wkrENzeWlGRY39uXqi7gZiRO+iRVuXOFUS51XyFXnB9qUQSUrhZ7sDaQsuy1NnDq7scKntEY1o8X2zT6lMSJ2Afp643lGFbhtpq/g5poA2+BvRDpz3RTjN9CJMXN9XYQbEw5TRVkTRYP3TLXJOYon1kD/gdu1ZofkgBspgAAAABJRU5ErkJggg==" />
 
     </footer>
     <script src="estilos/script.js"></script>

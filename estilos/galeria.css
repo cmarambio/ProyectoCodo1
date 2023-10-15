@@ -2,7 +2,10 @@
 
 .contenedorCard{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr
+  gap: 10vh;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 45vh), 1fr));
+
 }
 
 .card{
@@ -19,21 +22,27 @@
   text-align: center;
   padding: .1px;
   text-decoration: none;
+  color: #183d0e;
+  margin-bottom: 30vh;
+}
+
+.card:hover{
+  color: #f6be00;
 }
 
 .cardLocalidad {
   background-size: cover;
   background-position: center;
   width: 300px;
-  height: 200px;
+  height: 20vh;
   margin: 0 auto;
   margin-top: 10px;
   border-radius: 15%;
-  border: 7px solid #fff;
   border: 1px solid #b3a2a2;
 }
 .uritorco{
   background-image: url('../img/camina.jpg');
+  
 }
 
 .gigantes{
@@ -49,4 +58,20 @@
   padding: .5w;
   border-top: 1px solid #b3a2a2;
   color: black;
+  max-height: 150px;
+  overflow: scroll;
+}
+
+@media(max-width: 768px){
+  .card  p{
+    font-size: 2vw;
+    padding: .5w;
+    border-top: 1px solid #b3a2a2;
+    color: black;
+  }
+
+}
+
+.espacios{
+  height: 30vh;
 }
