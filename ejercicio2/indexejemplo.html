@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Codo a Codo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="estilos/nav.css">
+    <link rel="stylesheet" href="estilos/navquebrachitos.css">
     <link rel="shortcut icon" href="img/icono2.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/apiClima.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/footerquebrachitos.css">
 
-    <!-- sacar -->
+    
 </head>
 
 <body>
@@ -29,32 +30,34 @@
                                 <li><a href="quebrachitos.html">Quebrachitos</a></li>
                                 <li><a href="#">Uritorco</a></li>
                                 <li><a href="#">Los Gigantes</a></li>
-                             </ul>
-                    </li>
 
-                <li><a class="textNav" href="#myForm">Contacto</a></li>
-                <li><a class="textNav" href="https://www.google.com/maps/@-31.4396976,-64.3846743,11z?entry=ttu"
-                 target="_blank">Google</a></li>
-               
-            </ul>
-             </nav>
-        </section>
+                                </ul>
+                            </li>
+                            <li><a class="textNav" href="#myForm">Contacto</a></li>
+                            <li><a class="textNav" href="https://www.google.com/maps/@-31.4396976,-64.3846743,11z?entry=ttu"
+                                target="_blank">Google</a></li>
+                    </ul>
 
+                        </nav>
+                        <button class="button-menu-toggle">Menu</button>
+                    </div>
+                
+   
     </header>
 
-     <section class="about" id="about">
+    <section class="about" id="about">
 
         <h1 class="heading">Circuito Sendero Los Quebrachitos</h1>
-        <h3></h3>
+        <div class="row">
+        
                <div class="image">
                 <img src="img/cruzando rio.jpeg" alt="">
                 <img src="img/camina.jpg" alt="" >
                 <img src="img/1200px-La_Cascada_de_Los_Hornillos.jpg" alt="">
                 <img src="img/capilla buffo.jpg" alt="">
-                              
-          
-        
-            </div>
+                      
+                </div>
+        </div>
 
 
     </section>
@@ -63,7 +66,7 @@
         <div class="content">
             <h1>Bosque nativo, cascadas y una Capilla Unica</h1>
             <p>A sólo 8 km de la zona céntrica de Unquillo (y a 40k de cordoba ciudad), se encuentra un destino ideal para principiantes del senderismo. Dentro de la Reserva Hídrica, Natural y Recreativa Los Quebrachitos, con casi 5000 hectáreas, es posible recorrer senderos boscosos entre arroyos y vertientes. A través de sus rincones, se pueden hallar ejemplares con más de un siglo de algarrobos, quebrachos blancos, molles, cocos, acacias y moras, entre otros ejemplos de flora autóctona. La reserva está atravesada por los afluentes del río Unquillo: los arroyos Cabana y las Ensenadas. ¿Un imperdible ? La Cascada de Los Chorrillos, ideal para refrescarse en los días de verano.
-                Por ultimo, y no menos importante, se puede visitar la Capilla Buffo, constuida como homenaje del italiano</p>
+                Por ultimo, y no menos importante, se puede visitar la Capilla Buffo, construida como homenaje del italiano</p>
          </div>
     </section>
 
@@ -87,7 +90,7 @@
                 <h3>Ficha tecnica</h3>
                 <p>Dificultad física: moderada
                     Recorrido:  9 km.
-                    Duración: 4 horas y media.
+                    Duración: 2 horas y media.
                     Punto de partida y fin de recorrido: Casa Museo Buffo 31.192426, -64.364361
                     Perfil de elevación:
                     Altura máxima: 1063 msnm.
@@ -96,12 +99,12 @@
             </div>
 
             <div class="box">
-                <img class="imgApiClima" src="" alt="">
+                <img class="imgApiClima" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="imgaen clinma">
                   <div class="infoApi">
 
                 </div>
                 <h3>El Pronostico</h3>
-                <p>Te contamos como va a estar el clima para que te prepares!!!</p>
+                <p><strong>Te contamos como va a estar el clima para que te prepares!!!</strong></p>
               
             </div>
 
@@ -109,46 +112,44 @@
 
     </section>
 
-     <section class="contact" id="contact">
+   
+    <footer id: footer>
 
-        <h1 class="heading">Contacta con Nosotroso</h1>
-        <h3></h3>
-        <div class="row">
-            <div class="form-container">
+    <div>
+        <h2>Contacta Con Nosotros</h2>
+        <p>Si tienes preguntas, necesitas asistencia o deseas obtener más detalles, no dudes en ponerte en
+            contacto con nuestro equipo. Estamos aquí para hacer de tu visita a Córdoba una experiencia
+            excepcional.</p>
+        <p>Descubre Córdoba, descubre la auténtica alma de Argentina. ¡Bienvenido a un viaje que cambiará tu
+            perspectiva para siempre!</p>
+    </div>
 
-                <form id="myForm" onsubmit="validateForm()">
 
-                    <label for="nombre">Nombre:</label>
-                    <!-- <input type="text" id="nombre" name="nombre" required> -->
-                    <input type="text" id="nombre" name="nombre">
-            
-                    <label for="email" >Correo electrónico:</label>
-                    <!-- <input type="email" id="email" name="email" required> -->
-                    <input type="email" id="email" name="email" >
-                   
-                    <label for="asunto">Asunto:</label>
-                    <!-- <input type="text" id="asunto" name="asunto" required> -->
-                    <input type="text" id="asunto" name="asunto" >
-                    
-                    <input type="submit" value="Enviar">
-            
-                </form>
+    <form id="myForm" onsubmit="validateForm()">
 
-            </div>
-        </div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
 
-    </section>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
 
-    <section class="footer">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto">
 
-        <div class="icons">
+        <input type="submit" value="Enviar">
+
+    </form>
+    <div>© Todos los derechos reservados     <a href="templates/circuitosEjemplo.html">Terminos y Condiciones</a></div>
+
+      <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-reddit"></a>
         </div>
 
-    </section>
+    </footer>
+
 
     <script src="estilos/apiClima.js"></script>
     <script src="estilos/script.js"></script>
