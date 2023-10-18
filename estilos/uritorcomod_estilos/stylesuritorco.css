@@ -65,7 +65,14 @@ p {
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 45vh), 1fr)); */
 
+
     
+}
+
+@media(max-width: 768px){
+    .contenedor{
+        display: block;
+    }
 }
 
 .circuitos {

@@ -12,8 +12,10 @@
   margin-left: 0;
   gap: 0.7vw;
 }
+
+
 .cardGig {
-  width: calc(33.33% - 10px);
+  width: calc(33.33% - 10px); 
   padding: 1vw;
   background-color: #d0d2d4;
   text-align: center;
@@ -261,3 +263,39 @@ h5 {
   transform: rotate(360deg);
 }
 
+@media(max-width: 768px){
+  .card-containerGig{
+      display: block;
+      
+  }
+  .cardGig {
+    width:50vw;
+    margin: 20vw ;
+  }
+
+  .imagen-container{
+    margin: auto;
+    width: 100%; 
+  }
+
+  .cardGig h3{
+    font-size: 5vw;
+  }
+
+  .cardGig h4{
+  font-size: 5vw;
+  }
+
+  .cardGig p {
+    font-size: 3vw;
+  }
+
+  .principal h4{
+    font-size: 3vw;
+  }
+
+  .principal p{
+    font-size: 3vw;
+  }
+
+}
