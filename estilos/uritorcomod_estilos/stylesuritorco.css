@@ -69,11 +69,8 @@ p {
     
 }
 
-@media(max-width: 768px){
-    .contenedor{
-        display: block;
-    }
-}
+
+
 
 .circuitos {
     flex: 1;
@@ -183,3 +180,22 @@ p {
     
 }
 
+@media(max-width: 768px){
+    .contenedor{
+        display: block;
+    }
+    .descripcion{
+        font-size: 2vh;
+    }
+   .p-circuitos{
+        font-size: 2vh;
+    }
+
+    span h2{
+        font-size: 2.5vh;
+    }
+
+    .infoApi{
+        font-size: 2.5vw;
+    } 
+}
