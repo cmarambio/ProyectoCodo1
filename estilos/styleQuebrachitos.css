@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #f9580e;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #faf6f6;
+}
+
+.heading {
+    font-size: 4rem;
+    /* color: #f9580e; */
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.header .container-nav {
+    background-color: #183d0e;
+    display: flex;
+    width: 100%;
+}
+
+
+.home {
+    
+    background: linear-gradient(#183d0e , green), no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    position: center;
+    text-align: justify;
+}   
+
+
+.home .content h1 {
+    font-size: xx-large;
+    color: #fff;
+    padding: 0rem 2rem;   
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: medium;
+    color: #eee;
+    padding: 3rem 3rem;   
+}
+
+
+.product {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.product .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: flex-start;
+}
+
+.product .box-container .box {
+    height: 400px;
+    width: 400px;
+    background: #eee;
+    text-align: flex-start;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 1rem;
+ 
+}
+
+.product .box-container .box img {
+    width: 250px;
+    height: 250px;
+}
+
+.product .box-container .box iframe {
+    width: 240px;
+    height: 240px;
+}
+.product .box-container .box h3 {
+    font-size: 2rem;
+    color: #f9580e;
+    transition: .2s;
+}
+
+.product .box-container .box p {
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    color: #302f2f;
+}
+
+.product button:hover {
+    background: none;
+    border: .2rem solid #f9580e;
+}
+
+.about {
+    background: #fff7;
+}
+
+.about h1 {
+  color: #183d0e ;
+}
+    
+.about .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 2em 3em;
+}
+
+.about .row .image img {
+    height: 22vw;
+    width: 22vw;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    
+    html {
+        font-size: 55%;
+    }
+
+    header .nav-toggle {
+        top:5.5rem;
+        opacity: 1;
+    } */
+
+    .home .content p {
+        padding: 1.5rem 2rem;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+    }
+
+
+    .about .row .content {
+        padding: 0 2.5rem;
+    }
+
+
+
+
+}
+

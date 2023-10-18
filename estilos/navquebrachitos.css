@@ -28,7 +28,7 @@ ul li a:hover {
 .container-nav {
     display: flex;
     padding: 10px;
-    height: 50px;
+    height: 80px;
     background-color: #183d0e
 }
 
@@ -49,6 +49,7 @@ li {
 .textNav {
     color: #f6be00;
     text-decoration: none;
+    font-size: medium;
 }
 
 .nav-links {

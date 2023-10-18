@@ -2,6 +2,11 @@ document.querySelector("button.button-menu-toggle")
        .addEventListener("click", function () {
               document.querySelector(".nav-links").
                      classList.toggle("nav-links-responsive")
+                     const carrusel = document.querySelector(".contenedor-carrusel")
+                     if(carrusel){
+                            carrusel.remove();
+                     }
+
        })
 
 function validateEmail(email) {

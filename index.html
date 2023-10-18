@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="estilos/galeria.css">
     <link rel="stylesheet" href="estilos/nav.css">
     <link rel="stylesheet" href="estilos/apiClima.css">
+    <link rel="stylesheet" href="estilos/carrusel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
+        <!-- barra de navegación -->
         <div class="container-nav">
             <nav class="navbar">
                 <a class="textNav" href="index.html" class="brand">
@@ -23,11 +28,11 @@
                 </a>
                 <ul class="nav-links">
                     <li><a class="textNav" href="index.html">Home</a></li>
-                    <li><a class="textNav" href="">Lugares ▼</a>
+                    <li><a class="textNav" href="#">Lugares ▼</a>
                         <ul>
-                            <li><a href="quebrachitos.html">Quebrachitos</a></li>
-                            <li><a href="#">Urutirco</a></li>
-                            <li><a href="#">Los Gigantes</a></li>
+                            <li><a href="templates/quebrachitos.html">Quebrachitos</a></li>
+                            <li><a href="templates/uritorcodefinitivo.html">Uritorco</a></li>
+                            <li><a href="templates/losgigantes.html">Los Gigantes</a></li>
                         </ul>
                     </li>
                     <li><a class="textNav" href="#myForm">Contacto</a></li>
@@ -39,65 +44,116 @@
         </div>
     </header>
 
-    <main></main>
-    <div class="container">
+    <main>
+<!-- bienvenida y api -->
+<section class="sectionUno">
+    <h1> Bienvenidos a Senderos Córdoba </h1>
 
-        <h1> Bienvenidos a Sendereos Córdoba: </h1>
-        <img class="imgApiClima" src="" alt="">
+ <!-- api clima -->
 
+ <div class="presentacion">
+    <h2>Descubre la Magia de Nuestra Tierra</h2>
+    <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura,
+        te damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
+        sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
+        perdurarán en tu memoria para siempre.</p>
+        </div>
+</section>
 
-        <div class="infoApi">
-                   </div>
-                         <!-- Contenido principal -->
-
-        <section class="gallery">
-
-            <div class="image">
-                <a class="textGallery" href="quebrachitos.html">
-                    <img src="img/capilla buffo.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos odit suscipit temporibus adipisci
-                        amet eligendi error maiores. Ratione optio minus repellat! Vero doloribus perferendis deserunt
-                        optio. Cum rem earum fugiat? </p>
+        <!-- Contenido principal -->
+        <!-- Carrusel de imágenes -->
+        <section class="contenedor-carrusel">
+            <ul>
+                <a href="templates/quebrachitos.html">
+                    <img src="estilos/img/camina.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Quebrachitos</h2>
+                    </div>
                 </a>
-            </div>
-
-
-            <div class="image">
-                <a class="textGallery" href="">
-                    <img src="img/panoramica.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ad fugiat id quisquam illum
-                        nobis
-                        sed
-                        itaque perspiciatis velit ullam vero, tempore fugit consequuntur quae illo. Mollitia in
-                        voluptatibus
-                        ut.</p>
+                <a href="templates/quebrachitos.html">
+                    <img src="estilos/img/camina2.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Quebrachitos</h2>
+                    </div>
                 </a>
-            </div>
-
-            <div class="image">
-                <a class="textGallery" href="">
-                    <img src="img/imgProvisoria.JPG" alt="">
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo beatae unde natus totam
-                        distinctio reiciendis, vel, aliquam esse voluptatem temporibus asperiores animi, officiis eius.
-                        Vel unde temporibus repellat iure minima.</p>
+                <a href="templates/uritorcodefinitivo.html">
+                    <img src="estilos/img/Cerro Uritorco Carrusel/Urutorco03.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Cerro Uritorco</h2>
+                    </div>
                 </a>
-            </div>
-
+                <a href="templates/losgigantes.html">
+                    <img src="estilos/img/panoramica.png" alt="">
+                    <div class="tCarrusel">
+                        <h2>Los Gigantes</h2>
+                    </div>
+                </a>
+                <a href="templates/losgigantes.html">
+                    <img src="estilos/img/CarruselGigVistaN.png" alt="">
+                    <div class="tCarrusel">
+                        <h2>Los Gigantes</h2>
+                    </div>
+                </a>
+                <a href="templates/quebrachitos.html">
+                    <img src="estilos/img/rio2.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Quebrachitos</h2>
+                    </div>
+                </a>
+                <a href="templates/uritorcodefinitivo.html">
+                    <img src="estilos/img/Cerro Uritorco Carrusel/Urutorco01.jpg" alt="">
+                    <div class="tCarrusel">
+                        <h2>Cerro Uritorco</h2>
+                    </div>
+                </a>
+            </ul>
         </section>
 
-        <section class="presentacion">
-            <h2>Descubre la Magia de Nuestra Tierra</h2>
-            <p>En el corazón de Argentina, donde la historia se entrelaza con la naturaleza y la cultura,
-                te damos la más cálida bienvenida a la página de turismo de Córdoba. Aquí, te invitamos a
-                sumergirte en un mundo de paisajes cautivadores, tradiciones arraigadas y experiencias que
-                perdurarán en tu memoria para siempre.</p>
-        </section>
+        <!-- Galeria de imágenes tipo card con texto y presentaciones lindas -->
+        
+        <section class="contenedorCard">
+            <a href="templates/uritorcodefinitivo.html" class="card">
+                <div class="cardLocalidad uritorco"></div>
+                <h2 class="card__name">Cerro Uritorco</h2>
+                <p>El Cerro Uritorco, en Córdoba, Argentina, es un destino de trekking único. Con su
+                    misteriosa historia y leyendas de ovnis, atrae a aventureros de todo el mundo. Ofrece una variedad de
+                    rutas para todos los niveles, con vistas panorámicas impresionantes. La zona es rica en biodiversidad,
+                    ideal para la observación de aves. Un destino imperdible para los amantes de la naturaleza y la
+                    aventura.</p>
+            </a>
+            <a href="templates/losgigantes.html" class="card">
+                <div class="cardLocalidad gigantes"></div>
+                <h2 class="card__name">Los Gigantes</h2>
+                <p>Macizo de Los Gigantes, en el valle de Punilla. De una belleza y magnitud
+                    impactantes.
+                    Cuevas, ríos subterráneos, arroyos encajonados, vertientes, cascadas, quebradas y valles
+                    verdes, en diversos circuitos a pie por senderos con distinto grado de dificultad.</p>
+            </a>
+    
+            <a href="templates/quebrachitos.html" class="card">
+                <div class="cardLocalidad quebrachitos"></div>
+                <h2 class="card__name">Quebrachitos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nemo. Nostrum
+                    sint eveniet explicabo, vero voluptas repellendus nulla iste quo iusto accusantium veritatis nesciunt
+                    quasi, dignissimos rerum possimus recusandae culpa?</p>
+            </a>
 
-        <section class="cards">
-            <!-- acá irán las cards -->
+            <a href="templates/circuitosEjemplo.html" class="card">
+                <div class="cardLocalidad">
+                    <img class="imgApiClima" src="" alt="">
+                </div>
+                
+                <h2 class="card__name">El tiempo en Córdoba capital</h2>
+                <div class="infoApi"></div>
+                <img class="imgApiClima" src="" alt="">
+            </a>
+    
         </section>
-    </div>
+        
     </main>
+    <div class="espacios">
+
+    </div>
     <footer>
         <div>
             <h2>Contacta Con Nosotros</h2>
@@ -107,26 +163,24 @@
             <p>Descubre Córdoba, descubre la auténtica alma de Argentina. ¡Bienvenido a un viaje que cambiará tu
                 perspectiva para siempre!</p>
         </div>
-   
 
-    <form id="myForm" onsubmit="validateForm()">
 
-        <label for="nombre">Nombre:</label>
-        <!-- <input type="text" id="nombre" name="nombre" required> -->
-        <input type="text" id="nombre" name="nombre">
+        <form id="myForm" onsubmit="validateForm()">
 
-        <label for="email" >Correo electrónico:</label>
-        <!-- <input type="email" id="email" name="email" required> -->
-        <input type="email" id="email" name="email" >
-       
-        <label for="asunto">Asunto:</label>
-        <!-- <input type="text" id="asunto" name="asunto" required> -->
-        <input type="text" id="asunto" name="asunto" >
-        
-        <input type="submit" value="Enviar">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
 
-    </form>
-</footer>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto">
+
+            <input type="submit" value="Enviar">
+
+        </form>
+<div>© Todos los derechos reservados     <a href="templates/circuitosEjemplo.html">Terminos y Condiciones</a></div>
+    </footer>
     <script src="estilos/script.js"></script>
     <script src="estilos/apiClima.js"></script>
 </body>
