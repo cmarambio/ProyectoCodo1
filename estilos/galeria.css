@@ -41,16 +41,16 @@
   border: 1px solid #b3a2a2;
 }
 .uritorco{
-  background-image: url('../img/OBAMVFQBZFG7VOQJVZZUCQHPQQ.jpg');
+  background-image: url('img/camina.jpg');
   
 }
 
 .gigantes{
-  background-image: url('../img/CarruselGigBase.jpeg');
+  background-image: url('img/CarruselGigBase.jpeg');
 }
 
 .quebrachitos{
-  background-image: url('../img/capilla\ buffo.jpg');
+  background-image: url('img/capilla\ buffo.jpg');
 }
 
 .card  p{
