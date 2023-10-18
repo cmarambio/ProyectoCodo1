@@ -1,0 +1,178 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.seccion1 {
+    background: linear-gradient(#183d0ed7, #f6bd00a2);
+    margin: 0vw;
+    padding: 1vw;
+    
+}
+
+.descripcion {
+    font-size: 1.2vw;
+    text-align: justify;
+    margin: 1.5vw;
+    padding: 1vw;
+    font-weight: 600;
+    
+}
+
+p {
+    text-align: justify;
+    font-weight: 600;
+}
+
+.cerro-container{
+    text-align: center;
+}
+.cerro {
+    border-radius: 2vw;
+    width: 28vw;
+    height: 29vw;
+    margin: 0.7vw;
+    padding: 0.3vw;
+    background-color: #f6be00;
+
+}
+
+.seccion2 {
+    background: linear-gradient(#f6bd00a2, #183d0ed7);
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: justify;
+    /* display: grid;
+    gap: 2vh;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 45vh), 1fr)); */
+
+    
+}
+
+.circuitos {
+    flex: 1;
+    width: 33.33%;
+    padding: 1vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.p-circuitos {
+    font-size: 1vw;
+}
+
+.imagenes-container {
+    display: inline-block;
+    border-radius: 2vw;
+    flex-direction: column;
+}
+
+.imagenes {
+    border-radius: 2vw;
+    width: 70vw;
+    height: 40vh;
+    max-width: 360px;
+    min-width: none;
+    margin: 0;
+    padding: 0.3vw;
+    background-color: #ec8907b4;
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+
+.llegar {
+    flex: 1;
+    width: 33.33%;
+    padding: 1vw ;
+    margin: 0vw 0vw 0vw 3vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+    max-width: 360%;
+}
+
+.mapa {
+    border-radius: 1vw;
+    width: 100%;
+    height: 17vw;
+}
+
+.boton-container {
+    text-align: center;
+}
+
+.boton {
+    display: inline-flex;
+    padding: 0.5vw 0.5vw;
+    background-color: #ec8907b4;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px #2a3b2a;
+}
+
+.button:hover {
+    transform: perspective(1px) translateZ(1vw);
+}
+
+#dd {
+    text-align: justify;
+    font-weight: 600;
+}
+
+.clima {
+    flex: 1;
+    width: 33.33%;
+    padding: 1vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+
+}
+
+.infoApi {
+    font-size: 1vw;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: end
+}
+
+.imgApiClima{
+    float: right;
+}
+
+.silueta{
+    /* float: right; */
+    width: 27vw;
+    height: 46vh;
+    /* max-width: 300px;
+    max-height: 200px; */
+    
+}
+
