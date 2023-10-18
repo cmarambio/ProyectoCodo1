@@ -3,8 +3,12 @@ document.querySelector("button.button-menu-toggle")
               document.querySelector(".nav-links").
                      classList.toggle("nav-links-responsive")
                      const carrusel = document.querySelector(".contenedor-carrusel")
+                     const presentacion = document.querySelector(".presentacion");
+    
                      if(carrusel){
                             carrusel.remove();
+                            presentacion.remove();
+
                      }
 
        })
