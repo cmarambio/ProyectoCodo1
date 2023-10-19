@@ -1,48 +1,38 @@
+*{
+    font-family: Poppins;
+}
+
 body {
-    background-image: url(img/mapa.jpg);
     color: #183d0e;
 }
 
 
-h1 {
-    font-family: "arial", "sans-self";
-    font-size: 36px;
-    text-align: center;
-}
-
-
 p {
-    font-family: "Gerogia", "serif";
-    font-size: 18px;
-    padding: 10px;
-    margin: 20px;
+    font-size: 1.8vw;
+    padding: 1vw;
+    margin: 2vw;
 }
-
 
 .textNav:hover {
     color: rgb(250, 247, 253);
 }
 
-
 .container {
-    max-width: 800px;
+    max-width: 80vw;
     margin: auto;
-    padding: 20px;
+    padding: 2vw;
 }
-
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 1vw;
 }
-
 
 .column {
     flex: 1;
-    padding: 10px;
+    padding: 1vw;
 }
-
 
 .video {
     display: flex;
@@ -50,119 +40,85 @@ p {
 }
 
 
+
 #video {
     width: 50%;
     height: 50%;
-
-
 }
-
 
 @media (max-width: 600px) {
     .column {
         flex: 100%;
     }
+    .presentacion p{
+        font-size: 2vh;
+    }
 }
-
-
-.container-nav {
-    display: flex;
-    padding: 10px;
-    height: 50px;
-    background-color: #183d0e
-}
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-
 
 .brand {
     display: flex;
     align-items: center;
 }
 
+h1 {
+    font-size: 3.4vw;
+    text-align: center;
 
-
-
-li>a {
-    padding: 8px 24px;
+    background: linear-gradient(to right,  #f6be00, #183d0e, #f6be00); /* Define el fondo degradado */
+    -webkit-background-clip: text; /* Recorta el fondo con el texto */
+    background-clip: text; /* Recorta el fondo con el texto */
+    color: transparent; /* Oculta el color del texto */ 
+    margin-top: 1vw;
+    margin-bottom: 0;
+    padding: 1vw;   
 }
 
 
+.sendero {
+    font-size: 2vw;
+    text-align: center;
 
-
-li {
-    list-style-type: none;
-}
-
-
-
-
-.textNav {
-    color: #f6be00;
-    text-decoration: none;
-}
-
-
-
-
-.nav-links {
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-.button-menu-toggle {
-    display: none;
-}
-
-
-@media (max-width: 768px) {
-    .column {
-        flex: 100%;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .button-menu-toggle {
-        display: block;
-        background-color: white;
-        border: none;
-        border-radius: 50px;
-        padding: 0 24px;
-        font-family: monospace;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    .nav-links.nav-links-responsive {
-        position: absolute;
-        display: flex;
-        background-color: rgba(20, 20, 20, 0.95);
-        width: 100%;
-        height: 100%;
-        top: 70px;
-        left: 0;
-        flex-direction: column;
-        padding-top: 200px;
-        align-items: center;
-        gap: 70px;
-        font-size: 40px;
-    }
-}
-
-
-img {
-    max-width: 300px;
+    color:  #f6be00; 
+    background-color:  #183d0e;
+    margin-left: 3vw;
+    margin-right: 5vw;
+    margin-top: 1vw;
+    background-image: url('img/Sendero2.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: auto;
+    width: auto;
+               
 }
+
+/*
+h1 {
+    position: relative; 
+    overflow: hidden; /* Ocultar el contenido que no se ajusta 
+}
+
+h1::before, h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0.3vw;
+    background: linear-gradient(to right,#183d0e,  #f6be00, #183d0e);
+    transition: all 1s; 
+}
+
+h1::before {
+    left: 20%;
+}
+
+h1::after {
+    right: 20%;
+}
+
+h1:hover::before, h1:hover::after {
+    width: 50%;
+}
+*/
+
