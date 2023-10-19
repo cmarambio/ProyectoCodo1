@@ -4,10 +4,15 @@ document.querySelector("button.button-menu-toggle")
                      classList.toggle("nav-links-responsive")
                      const carrusel = document.querySelector(".contenedor-carrusel")
                      const presentacion = document.querySelector(".presentacion");
-    
+                     const imageGigantes = document.querySelector(".imageGigantes");
+                     const palabra = document.querySelector(".palabra");
+
+
                      if(carrusel){
                             carrusel.remove();
                             presentacion.remove();
+                            imageGigantes.remove();
+                            palabra.remove();
 
                      }
 
