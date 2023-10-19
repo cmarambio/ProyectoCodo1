@@ -54,7 +54,9 @@ p {
     .column {
         flex: 100%;
     }
-    
+    .presentacion p{
+        font-size: 2vh;
+    }
 }
 
 .brand {
