@@ -1,22 +1,12 @@
 /* Estilos para el formulario */
 footer{
-  /* position: absolute; */
+  position: absolute;
   background-color: #183d0e ;
   color: #f6be00;
-  padding: 2vh;
-  
 }
 
-.tTexto > h2{
-  text-align: center;
-  
-}
-
-.tTexto > p{
-text-align: justify;
-}
 form {
-    max-width: 40vw;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
@@ -48,7 +38,6 @@ form {
   /* Estilos para etiquetas */
   label {
     font-weight: bold;
-    font-size: 1.5vw;
   }
   
   /* Estilos para mensajes de error */
@@ -56,28 +45,20 @@ form {
     color: red;
   }
 
-  .tTexto > p .tTexto > h2{
+  footer div p{
     font-size: 2vw;
   }
 
   @media(max-width: 768px){
-    .tTexto > h2{
-      font-size: 3vh;
-      text-align: center;
+    footer div p{
+      font-size: 2vw;
     }
-    .tTexto > p {
-      font-size: 2.5vw;
-    }
-
+  
   }
   
   @media (max-width: 600px){
-    .tTexto > h2{
-      font-size: 3vh;
-      text-align: center;
-    }
-    .tTexto > p {
-      font-size: 4vw;
+    footer div p{
+      font-size: 15px;
     }
 
     footer{

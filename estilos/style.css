@@ -6,9 +6,36 @@ body {
     color: #183d0e;
 }
 
-h1 {
-    font-size: 3.6vw;
+.sectionUno > h1 {
+    font-size: 3.4vw;
     text-align: center;
+
+    background: linear-gradient(to right,  #f6be00, #183d0e, #f6be00); /* Define el fondo degradado */
+    -webkit-background-clip: text; /* Recorta el fondo con el texto */
+    background-clip: text; /* Recorta el fondo con el texto */
+    color: transparent; /* Oculta el color del texto */ 
+    margin-top: 1vw;
+    margin-bottom: 0;
+    padding: 1vw; 
+}
+
+.sendero {
+    font-size: 2vw;
+    text-align: center;
+
+    color:  #f6be00; 
+    background-color:  #183d0e;
+    margin-left: 3vw;
+    margin-right: 5vw;
+    margin-top: 1vw;
+    background-image: url('img/Sendero2.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: auto;
+               
 }
 
 p {
