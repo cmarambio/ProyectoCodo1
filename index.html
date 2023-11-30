@@ -116,25 +116,33 @@
             <a href="templates/uritorcodefinitivo.html" class="card">
                 <div class="cardLocalidad uritorco"></div>
                 <h2 class="card__name">Cerro Uritorco</h2>
-                <p>El Cerro Uritorco, en Córdoba, Argentina, es un destino de trekking único. Con su
-                    misteriosa historia y leyendas de ovnis, atrae a aventureros de todo el mundo. Ofrece una variedad de
-                    rutas para todos los niveles, con vistas panorámicas impresionantes. La zona es rica en biodiversidad,
-                    ideal para la observación de aves. Un destino imperdible para los amantes de la naturaleza y la
-                    aventura.</p>
+                <div class="card__text__container">
+                    <p class="card__text">El Cerro Uritorco, en Córdoba, Argentina, es un destino de trekking único. Con su
+                        misteriosa historia y leyendas de ovnis, atrae a aventureros de todo el mundo. Ofrece una variedad de
+                        rutas para todos los niveles, con vistas panorámicas impresionantes. La zona es rica en biodiversidad,
+                        ideal para la observación de aves. Un destino imperdible para los amantes de la naturaleza y la
+                        aventura.</p>
+                </div>
+
             </a>
             <a href="templates/losgigantes.html" class="card">
                 <div class="cardLocalidad gigantes"></div>
                 <h2 class="card__name">Los Gigantes</h2>
-                <p>Macizo de Los Gigantes, en el valle de Punilla. De una belleza y magnitud
+                <div class="card__text__container">
+                    <p class="card__text">Macizo de Los Gigantes, en el valle de Punilla. De una belleza y magnitud
                     impactantes.
                     Cuevas, ríos subterráneos, arroyos encajonados, vertientes, cascadas, quebradas y valles
                     verdes, en diversos circuitos a pie por senderos con distinto grado de dificultad.</p>
+                </div>
             </a>
     
             <a href="templates/quebrachitos.html" class="card">
                 <div class="cardLocalidad quebrachitos"></div>
                 <h2 class="card__name">Quebrachitos</h2>
-                <p>La Reserva Hídrica, Natural y Recreativa Los Quebrachitos es un destino imperdible muy cerca de Cordoba. Dentro de este predio se abren diversos senderos hacia lugares inolvidables: verde monte y frescos cursos de agua (Los arroyos Cabana y las Ensenadas se hacen presentes con arroyos y cascadas). Un lugar especial, al que siempre vas a querer regresar.</p>
+                <div class="card__text__container">
+                    <p class="card__text">La Reserva Hídrica, Natural y Recreativa Los Quebrachitos es un destino imperdible muy cerca de Cordoba. Dentro de este predio se abren diversos senderos hacia lugares inolvidables: verde monte y frescos cursos de agua (Los arroyos Cabana y las Ensenadas se hacen presentes con arroyos y cascadas). Un lugar especial, al que siempre vas a querer regresar.</p>
+                </div>
+
             </a>
 
             <a href="templates/circuitosEjemplo.html" class="card">
@@ -164,24 +172,47 @@
         </div>
 
 
-        <form id="myForm" onsubmit="validateForm()">
+        <form id="myForm">
+            <div class="entrada">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <div class="entrada">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email">
+            <div class="entrada">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto">
+            </div>
 
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto">
-
-            <input type="submit" value="Enviar">
+            <div class="entrada">
+                <button class="modificar" type="button" onclick="enviar()">Enviar</button>
+            </div>
 
         </form>
+        <form >
+            <h2>Ingresar a administración</h2>
+            <div class="entrada">
+              <label for="staticEmail2">Email</label>
+              <input type="text"  id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="entrada">
+              <label for="inputPassword2" >Password</label>
+              <input type="password" id="inputPassword2" placeholder="Password">
+            </div>
+            <div class="entrada">
+              <button type="submit" onclick="ingresar()">Ingresar</button>
+            </div>
+          </form>
 <div>© Todos los derechos reservados     <a href="templates/circuitosEjemplo.html">Terminos y Condiciones</a></div>
     </footer>
+    <script src="estilos/contacto.js"></script>
     <script src="estilos/script.js"></script>
     <script src="estilos/apiClima.js"></script>
+    <script src="estilos/tabla_contactos.js"></script>
 </body>
 
 </html>

@@ -23,26 +23,30 @@ function validateEmail(email) {
               return regex.test(email)
             }
             
-function validateForm() {
-       var nombre = document.getElementById("nombre").value.trim(); 
-       var asunto = document.getElementById("asunto").value.trim();
-       var email = document.getElementById('email').value.trim();
+            function ingresar(){
+              var usuario = document.getElementById("staticEmail2").value;
+              var contraseña = document.getElementById("inputPassword2").value;
        
-       console.log(nombre, asunto, email);
+       
+              if (usuario == "admin@admin.com" && contraseña == "1234") {
+                  
+        let url = "http://localhost:5000/registro"  
+        fetch(url)
+        .then(function () {
+
+            alert("Ingresando a administración")
+            // Devuelve el href (URL) de la página actual
+           window.location.href = "../templates/contactos.html";
 
 
-
-       var nombreTest =/^[a-zA-Z]+$/.test(nombre)
-
-       if(nombreTest === false){
-              alert("Por favor, ingrese un nombre con letras del alfabeto")
-              return false
+        })
+        .catch(err => {
+            //this.errored = true
+            alert("Error al enviar")
+            console.error(err);
+        })
+                       
+              }else{
+                     alert("Usuario y/o contraseña incorrecta.")
+              }
        }
-
-       if (nombre === "" || asunto === "" || !validateEmail(email)) {
-              alert('Por favor ingrese todos los campos vacío o un correo electrónico válido.');
-              return false
-       } 
-
-       alert('Correo electrónico enviado correctamente. Nos contactaremos con vos en breve. Saludos!!');
-}
