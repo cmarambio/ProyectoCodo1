@@ -24,8 +24,7 @@ async function climaCordoba(){
         La Temperatura en Córdoba es :
            ${info.feelslike_c}° , 
            Vientos de  ${info.gust_kph} Kilómetros por Hora,
-           Humedad del  ${info.humidity}%
-           Actualización al ${info.last_updated} hora local</p>
+           </p>
      `;
     
 
