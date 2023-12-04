@@ -20,7 +20,7 @@ function enviar() {
 
         console.log(enviar_contacto);
         // Petición que se hace a la app web en flask
-        let url = "http://localhost:5000/registro"
+        let url = "https://cesia.pythonanywhere.com/registro"
         var options = {
             body: JSON.stringify(enviar_contacto),
             method: 'POST',
