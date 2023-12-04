@@ -30,13 +30,13 @@ function validateEmail(email) {
        
               if (usuario == "admin@admin.com" && contraseña == "1234") {
                   
-        let url = "http://localhost:5000/registro"  
+        let url = "https://cesia.pythonanywhere.com/registro"  
         fetch(url)
         .then(function () {
 
             alert("Ingresando a administración")
             // Devuelve el href (URL) de la página actual
-           window.location.href = "../templates/contactos.html";
+           window.location.href = "templates/contactos.html";
 
 
         })
